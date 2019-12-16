@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ex01</title>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/42_Logo.svg/1200px-42_Logo.svg.png" type="image/png">
+</head>
+<body>
+    <input id="left" />
+    <select id="oper">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <input id="right" />
+    <input id="try" type="submit" value="Try me!" />
+    <script>
+        var t = document.getElementById("try");
+        var r = document.getElementById("right");
+        var l = document.getElementById("left");
+        var o = document.getElementById("oper");
+        var res;
+        window.setInterval(function(){
+            alert("’Please, use me...");
+        }, 30000);
+        var show = function(msg){
+            console.log(msg);
+            alert(msg);
+        }
+        t.addEventListener("click", function(){
+            fv = parseInt(l.value);
+            op = o.value;
+            sv = parseInt(r.value);
+            res = eval(fv + op + sv);
+            if ((isNaN(fv) || isNaN(sv) || isNaN(res)) || (fv < 0 || sv < 0)){
+                show("Error :(");
+            }
+            else if ((op === "/" || op === "%") && sv === 0){
+                show("It’s over 9000!");
+            }
+            else
+                show(res);
+        });
+    </script>
+</body>
+</html>

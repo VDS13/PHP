@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ex00</title>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/42_Logo.svg/1200px-42_Logo.svg.png" type="image/png">
+    <style>
+        #balloon {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="balloon"></div>
+    <script>
+        var size = 200;
+        var it = 0;
+        var color = ["red", "green", "blue"];
+        var bal = document.getElementById("balloon");
+        bal.addEventListener("click", function booms(){
+            size += 10;
+            it += 1;
+            if (it == 3)
+                it = 0;
+            if (size >= 420) {
+                it = 0;
+                size = 200;
+            }
+            bal.style.backgroundColor = color[it];
+            bal.style.width = size + 'px';
+            bal.style.height = size + 'px';
+        });
+        bal.addEventListener("mouseleave", function lul(){
+            if (size >= 205) {
+                size -= 5;
+                it -= 1;
+                if (it == -1)
+                    it = 2;
+            }
+            else if (size == 200)
+                it = 0;
+            bal.style.backgroundColor = color[it];
+            bal.style.width = size + 'px';
+            bal.style.height = size + 'px';
+        });
+    </script>
+</body>
+</html>

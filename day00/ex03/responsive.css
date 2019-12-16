@@ -1,0 +1,93 @@
+body, html {
+    background-color: black;
+    font-size: 0.60vw
+}
+table {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin: auto;
+    width: 100%;
+}
+h1 {
+    color: hotpink;
+    font-family: Arial;
+    font-size: 2em;
+    text-align: center;
+}
+hr {
+    clear: both;
+    color: pink;
+}
+td {
+    font-size: 1vw;
+    font-weight: bold;
+    font-family: Arial;
+    text-align: center;
+}
+th {
+    background-color: white;
+    min-width: 1vw;
+}
+.res {
+    margin: 6px 15% 6px 15%;
+}
+.pct{
+    text-align: center;
+}
+.dop {
+    background-color: white;
+}
+.atom {
+    margin: 1px 1px 1px 1px;
+    font-size: 0.4em;
+    text-align: right;
+}
+.num {
+    margin: 1px 1px 1px 1px;
+    font-size: 0.4em;
+    text-align: left;
+}
+.leave {
+    background-color: black;
+}
+.copyright {
+    color: white;
+    text-align: center;
+    font-family: monospace;
+    font-style: italic;
+}
+.alkali {
+    background-color: red;
+}
+.alkalineearth {
+    background-color: brown;
+}
+.halogen {
+    background-color: yellow;
+}
+.blag {
+    background-color: aqua;
+}
+.pere {
+    background-color: deeppink;
+}
+.post {
+    background-color: rosybrown;
+}
+.halfmet {
+    background-color: dimgray;
+}
+.hcno {
+    background-color: greenyellow;
+}
+.akt {
+    background-color: purple;
+}
+.lak {
+    background-color: hotpink;
+}
+img {
+    margin: 1px 1px 1px 1px;
+    width: 1.5vw;
+    height: 1.5vw;
+}

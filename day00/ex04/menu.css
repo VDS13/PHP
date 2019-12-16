@@ -1,0 +1,45 @@
+.menu {
+    text-align: center;
+}
+.menu ul>li:hover {
+    background-color: black;
+}
+.menu ul ul>li:hover {
+    background-color: rgba(50, 187, 205, 0.979);
+}
+.menu ul li, .menu ul {
+    display: inline-block;
+}
+.menu ul {
+    width: 50%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(21, 255, 0);
+}
+.menu ul ul {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: red;
+}
+.menu ul a {
+    font-size: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #fff;
+    text-decoration: none;
+}
+.menu ul ul a {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+.menu li:hover ul {
+    display: block;
+}
+.menu li:hover li {
+    display: block;
+}
